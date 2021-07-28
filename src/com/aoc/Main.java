@@ -2,6 +2,7 @@ package com.aoc;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
 
@@ -87,14 +88,56 @@ public class Main {
         }
 */
 
-        Animal a = new Animal("bechbech",1);
-        a.walk();
-        System.out.println(a.name);
+        /* *********Main************ */
+
+        //Animal a = new Animal("bechbech",1);
+       // a.walk();
+        //a.setName("katkout");
+        //System.out.println(a.getName());
+
+        //Animal aa = new Animal();
+       // System.out.println("***" + aa.getName());
+       // aa.walk(50);
+
+
 
         Cat c = new Cat("toto",2,"black");
-        c.walk();
-        c.sleep();
+       // c.walk();
+       // c.sleep();
+
+        Dog dog = new Dog("max",4,"caniche");
+       // System.out.println(dog.race);
+       // dog.walk();
 
 
+        Animal p;
+
+        Dog g = new Dog("z",5,"r");
+        //p = g;
+
+
+        Dog d1 = new Dog("max",5,"r");
+        Dog d2 = new Dog("rex",1,"t");
+        Cat c1 = new Cat("bechbech",2,"white");
+
+        Animal[] home = new Animal[3];
+
+        home[0] = d1;
+        home[1] = d2;
+        home[2] = c1;
+
+        System.out.println(d1);
+
+
+        Scanner input = new Scanner(System.in);
+        int num = input.nextInt();
+
+        try{
+            System.out.println(5 / num);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+
+        System.out.println("done");
     }
 }

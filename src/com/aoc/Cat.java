@@ -9,7 +9,29 @@ public class Cat extends Animal{
         this.couleur = couleur;
     }
 
-   void sleep(){
-       System.out.println("the cat is sleeping..");
+    void sleep(){
+        System.out.println("the cat is sleeping..");
    }
+
+    @Override
+    public void walk(){
+        System.out.println("the cat is walking..");
+    }
+
+    @Override
+    public void walk(int distance){
+        System.out.println("the cat is walking.. for a " + distance);
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Cat{" +
+                "couleur='" + couleur + '\'' +
+                '}';
+    }
+
+    @Override
+    public void eat() {
+        System.out.println("cat eat catnip");
+    }
 }
